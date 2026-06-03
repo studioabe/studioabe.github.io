@@ -7,6 +7,8 @@ const portfolioCards = document.querySelectorAll(".portfolio-card");
 const faqItems = document.querySelectorAll(".faq-item");
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
+targetAnswer.style.height =
+(targetAnswer.scrollHeight + 24) + "px";
 
 window.addEventListener("scroll", () => {
   if (header) header.classList.toggle("scrolled", window.scrollY > 20);
