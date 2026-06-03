@@ -60,7 +60,7 @@
     background:#fff;
 }
 
-.btn-outline:hover{
+.{
 
     background:var(--primary-gradient);
 
@@ -161,7 +161,7 @@ body, p, li, input, textarea, select { font-weight: 400; }
 
 .btn-kakao { background: #fee500; color: #3c1e1e; }
 
-.header-cta:hover, .btn-primary:hover, .btn-outline:hover, .btn-mini:hover, .btn-kakao:hover {
+.header-cta:hover, .btn-primary:hover, ., .btn-mini:hover, .btn-kakao:hover {
   transform: translateY(-2px);
 }
 
@@ -855,13 +855,13 @@ body, p, li, input, textarea, select { font-weight: 400; }
   border: 1.5px solid #e989b8 !important;
 }
 
-.btn-outline:hover,
+.,
 .btn-mini:hover {
   background: linear-gradient(90deg, #e989b8 0%, #a996f4 100%) !important;
   color: #fff !important;
   border-color: transparent !important;
 }
-.btn-outline:hover,
+.,
 .btn-mini:hover {
   background: #f56d9a !important;
   color: #fff !important;
@@ -889,9 +889,9 @@ body, p, li, input, textarea, select { font-weight: 400; }
   border: 1.5px solid #f56d9a !important;
 }
 
-a.btn-outline:hover,
-.btn-outline:hover,
-.hero-buttons a.btn-outline:hover {
+a.,
+.,
+.hero-buttons a. {
   background: #f56d9a !important;
   color: #fff !important;
   border-color: #f56d9a !important;
@@ -899,7 +899,7 @@ a.btn-outline:hover,
   transform: translateY(-3px) !important;
 }
 
-  .btn-outline:hover{
+  .{
 
     background:#f56d9a;
 
@@ -952,7 +952,7 @@ a.btn-outline:hover,
     transition:all .3s ease;
 }
 
-.btn-outline:hover,
+.,
 .btn-mini:hover{
     background:#f56d9a !important;
     color:#fff !important;
@@ -1045,7 +1045,7 @@ a.btn-outline:hover,
     transition:all .3s ease;
 }
 
-.btn-outline:hover,
+.,
 .btn-mini:hover{
     background:#f56d9a !important;
     color:#fff !important;
