@@ -1127,4 +1127,37 @@ a.,
     box-shadow:
         0 20px 40px rgba(233,137,184,.35);
 }
+
+  .header-cta,
+.btn-primary,
+.btn-outline,
+.btn-mini,
+.btn-kakao{
+    transition:all .3s ease;
+}
+.header-cta:hover,
+.btn-primary:hover,
+.btn-outline:hover,
+.btn-mini:hover,
+.btn-kakao:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 20px 40px rgba(233,137,184,.25);
+}
+.btn-outline:hover{
+
+    background:#fff;
+
+    border-color:#e989b8;
+
+    color:#e989b8;
+
+    box-shadow:
+        0 15px 35px rgba(233,137,184,.18);
+}
+  
 }
