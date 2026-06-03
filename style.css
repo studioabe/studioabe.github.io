@@ -1128,13 +1128,14 @@ a.,
         0 20px 40px rgba(233,137,184,.35);
 }
 
-  .header-cta,
+.header-cta,
 .btn-primary,
 .btn-outline,
 .btn-mini,
-.btn-kakao{
+.btn-kakao {
     transition:all .3s ease;
 }
+  
 .header-cta:hover,
 .btn-primary:hover,
 .btn-outline:hover,
