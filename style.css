@@ -237,3 +237,17 @@ button.btn-kakao:hover,
     height: 54px;
   }
 }
+.hero-content {
+  position: relative !important;
+  z-index: 10 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero-title,
+.hero-badge,
+.hero-desc,
+.hero-buttons {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
