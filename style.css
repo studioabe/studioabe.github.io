@@ -146,5 +146,5 @@ if (contactForm) contactForm.addEventListener("submit", async (event) => {
 
 //   formMessage.textContent = "상담 신청이 접수되었습니다. 빠르게 확인 후 연락드릴게요.";
 //   contactForm.reset();
-});
+
 
