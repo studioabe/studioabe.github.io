@@ -52,8 +52,8 @@ faqItems.forEach((item) => {
     targetAnswer.style.height = "0px";
     targetAnswer.style.opacity = "0";
     targetAnswer.style.padding = window.innerWidth <= 760
-      ? "0 24px 0 24px"
-      : "0 24px 0 72px";
+    ? "18px 24px 28px 24px"
+    : "20px 24px 32px 72px";
   };
 
   const openItem = (target) => {
