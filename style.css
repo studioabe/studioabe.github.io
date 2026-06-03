@@ -92,10 +92,15 @@ button.btn-kakao:hover,
   display: none !important;
   content: none !important;
 }
-
-.hero-badge {
-  padding-left: 0 !important;
-  color: #d66f9e !important;
+.hero-badge{
+    background:linear-gradient(
+        90deg,
+        #ff6aa7,
+        #ef4f96
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
 }
 
 /* 2) FAQ: 답변 하단/상단 패딩 안정화 + 글씨 잘림 방지 */
