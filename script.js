@@ -115,7 +115,7 @@ if (contactForm) contactForm.addEventListener("submit", async (event) => {
   formData.append("message", contactForm.querySelector("textarea").value);
 
   try {
-    await fetch("네_Apps_Script_웹앱_URL", {
+    await fetch("https://script.google.com/macros/s/AKfycbxprAQVEIHkUyvUKqa1WZspZuCGZdW_gi45ZBwocUUxT_SP9EEzq6p3FdY5JXnboaOPdQ/exec", {
       method: "POST",
       mode: "no-cors",
       body: formData
