@@ -103,23 +103,48 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
 if (contactForm) contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const formData = {
-    hospital: contactForm.querySelector('input[placeholder="병원명 또는 브랜드명"]').value,
-    name: contactForm.querySelector('input[placeholder="담당자명"]').value,
-    phone: contactForm.querySelector('input[placeholder="연락처 010-0000-0000"]').value,
-    service: contactForm.querySelector("select").value,
-    message: contactForm.querySelector("textarea").value
-  };
+  const formData = new FormData();
+  formData.append("hospital", contactForm.querySelector('input[placeholder="병원명 또는 브랜드명"]').value);
+  formData.append("name", contactForm.querySelector('input[placeholder="담당자명"]').value);
+  formData.append("phone", contactForm.querySelector('input[placeholder="연락처 010-0000-0000"]').value);
+  formData.append("service", contactForm.querySelector("select").value);
+  formData.append("message", contactForm.querySelector("textarea").value);
 
-  await fetch("https://script.google.com/macros/s/AKfycbxAZ1U3sR_fgiU_VJ0eKTPviJqiyMjSXX_AH4wRmDkwFxLb0jwWQh-5fFBrP3bORA6xTA/exec", {
-    method: "POST",
-    body: JSON.stringify(formData)
-  });
+  try {
+    await fetch("네_Apps_Script_웹앱_URL", {
+      method: "POST",
+      mode: "no-cors",
+      body: formData
+    });
 
-  formMessage.textContent = "상담 신청이 접수되었습니다. 빠르게 확인 후 연락드릴게요.";
-  contactForm.reset();
+    formMessage.textContent = "상담 신청이 접수되었습니다. 빠르게 확인 후 연락드릴게요.";
+    contactForm.reset();
+  } catch (error) {
+    formMessage.textContent = "전송 중 오류가 발생했습니다. 다시 시도해주세요.";
+  }
+});
+
+// if (contactForm) contactForm.addEventListener("submit", async (event) => {
+//   event.preventDefault();
+
+//   const formData = {
+//     hospital: contactForm.querySelector('input[placeholder="병원명 또는 브랜드명"]').value,
+//     name: contactForm.querySelector('input[placeholder="담당자명"]').value,
+//     phone: contactForm.querySelector('input[placeholder="연락처 010-0000-0000"]').value,
+//     service: contactForm.querySelector("select").value,
+//     message: contactForm.querySelector("textarea").value
+//   };
+
+//   await fetch("https://script.google.com/macros/s/AKfycbxAZ1U3sR_fgiU_VJ0eKTPviJqiyMjSXX_AH4wRmDkwFxLb0jwWQh-5fFBrP3bORA6xTA/exec", {
+//     method: "POST",
+//     body: JSON.stringify(formData)
+//   });
+
+//   formMessage.textContent = "상담 신청이 접수되었습니다. 빠르게 확인 후 연락드릴게요.";
+//   contactForm.reset();
 });
 
