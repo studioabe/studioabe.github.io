@@ -29,7 +29,7 @@ if (floatTop) floatTop.addEventListener("click", () => {
 });
 
 filterBtns.forEach((btn) => {
-  btn.("click", () => {
+  btn.addEventListener("click", () => {
     filterBtns.forEach((item) => item.classList.remove("active"));
     btn.classList.add("active");
 
@@ -77,7 +77,7 @@ faqItems.forEach((item) => {
     openItem(item);
   }
 
-  question.("click", () => {
+  question.addEventListener("click", () => {
     const isActive = item.classList.contains("active");
 
     faqItems.forEach((other) => {
