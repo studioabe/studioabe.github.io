@@ -9,21 +9,21 @@ const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
 
 window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 20);
-  floatTop.classList.toggle("show", window.scrollY > 450);
+  if (header) header.classList.toggle("scrolled", window.scrollY > 20);
+  if (floatTop) floatTop.classList.toggle("show", window.scrollY > 450);
 });
 
-menuBtn.addEventListener("click", () => {
+if (menuBtn && gnb) menuBtn.addEventListener("click", () => {
   gnb.classList.toggle("open");
 });
 
-gnb.querySelectorAll("a").forEach((link) => {
+if (gnb) gnb.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     gnb.classList.remove("open");
   });
 });
 
-floatTop.addEventListener("click", () => {
+if (floatTop) floatTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
@@ -41,32 +41,52 @@ filterBtns.forEach((btn) => {
   });
 });
 
-// faqItems.forEach((item) => {
-//   const question = item.querySelector(".faq-question");
-
-//   question.addEventListener("click", () => {
-//     faqItems.forEach((other) => {
-//       if (other !== item) other.classList.remove("active");
-//     });
-//     item.classList.toggle("active");
-//   });
-// });
 faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
 
-    question.addEventListener("click", () => {
+  const closeItem = (target) => {
+    const targetAnswer = target.querySelector(".faq-answer");
+    target.classList.remove("active");
+    targetAnswer.style.height = "0px";
+    targetAnswer.style.opacity = "0";
+    targetAnswer.style.padding = window.innerWidth <= 760
+      ? "0 24px 0 24px"
+      : "0 24px 0 72px";
+  };
 
-        const isActive = item.classList.contains("active");
+  const openItem = (target) => {
+    const targetAnswer = target.querySelector(".faq-answer");
+    target.classList.add("active");
 
-        faqItems.forEach((other) => {
-            other.classList.remove("active");
-        });
+    targetAnswer.style.height = "auto";
+    const fullHeight = targetAnswer.scrollHeight;
+    targetAnswer.style.height = "0px";
 
-        if (!isActive) {
-            item.classList.add("active");
-        }
-
+    requestAnimationFrame(() => {
+      targetAnswer.style.height = fullHeight + "px";
+      targetAnswer.style.opacity = "1";
+      targetAnswer.style.padding = window.innerWidth <= 760
+        ? "18px 24px 24px 24px"
+        : "20px 24px 32px 72px";
     });
+  };
+
+  if (item.classList.contains("active")) {
+    openItem(item);
+  }
+
+  question.addEventListener("click", () => {
+    const isActive = item.classList.contains("active");
+
+    faqItems.forEach((other) => {
+      closeItem(other);
+    });
+
+    if (!isActive) {
+      openItem(item);
+    }
+  });
 });
 
 const observer = new IntersectionObserver(
@@ -83,7 +103,7 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-contactForm.addEventListener("submit", (event) => {
+if (contactForm) contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
   formMessage.textContent = "문의 샘플이 접수된 것처럼 표시했어요. 실제 전송은 별도 연결이 필요합니다.";
   contactForm.reset();
