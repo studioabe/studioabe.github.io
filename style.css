@@ -1099,4 +1099,32 @@ a.,
     font-size:15px;
     color:#6f6a78;
 }
+
+  .btn-primary{
+    background:
+    linear-gradient(
+        90deg,
+        #e989b8,
+        #a996f4
+    );
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+
+    background:
+    linear-gradient(
+        90deg,
+        #ef9dc5,
+        #b3a2ff
+    );
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 20px 40px rgba(233,137,184,.35);
+}
 }
