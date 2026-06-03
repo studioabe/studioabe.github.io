@@ -1006,4 +1006,97 @@ a.btn-outline:hover,
     font-size:15px;
     color:#6f6a78;
 }
+
+  /* =========================
+   공통 버튼
+========================= */
+
+.header-cta,
+.btn-primary,
+.submit-btn{
+    background:#f56d9a !important;
+    color:#fff !important;
+    border:none !important;
+    border-radius:999px;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.header-cta:hover,
+.btn-primary:hover,
+.submit-btn:hover{
+    background:#ef5d8d !important;
+    color:#fff !important;
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(245,109,154,.25);
+}
+
+/* =========================
+   외곽선 버튼
+========================= */
+
+.btn-outline,
+.btn-mini{
+    background:#fff !important;
+    color:#f56d9a !important;
+    border:1.5px solid #f56d9a !important;
+    border-radius:999px;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.btn-outline:hover,
+.btn-mini:hover{
+    background:#f56d9a !important;
+    color:#fff !important;
+    border-color:#f56d9a !important;
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(245,109,154,.25);
+}
+
+/* =========================
+   카드 Hover
+========================= */
+
+.feature-card,
+.service-card,
+.portfolio-card,
+.why-card{
+    transition:all .3s ease;
+}
+
+.feature-card:hover,
+.service-card:hover,
+.portfolio-card:hover,
+.why-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(245,109,154,.12);
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-answer{
+    height:0;
+    overflow:hidden;
+    opacity:0;
+
+    transition:
+        height .45s cubic-bezier(.22,1,.36,1),
+        opacity .25s ease,
+        padding .35s ease;
+}
+
+.faq-item.active .faq-answer{
+    opacity:1;
+    padding:20px 24px 28px 72px;
+}
+
+.faq-answer p{
+    margin:0;
+    line-height:1.8;
+    font-size:15px;
+    color:#6f6a78;
+}
 }
