@@ -7,8 +7,7 @@ const portfolioCards = document.querySelectorAll(".portfolio-card");
 const faqItems = document.querySelectorAll(".faq-item");
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
-targetAnswer.style.height =
-(targetAnswer.scrollHeight + 24) + "px";
+
 
 window.addEventListener("scroll", () => {
   if (header) header.classList.toggle("scrolled", window.scrollY > 20);
@@ -62,15 +61,15 @@ faqItems.forEach((item) => {
     target.classList.add("active");
 
     targetAnswer.style.height = "auto";
-    const fullHeight = targetAnswer.scrollHeight;
+    const fullHeight = targetAnswer.scrollHeight + 24;
     targetAnswer.style.height = "0px";
 
     requestAnimationFrame(() => {
       targetAnswer.style.height = fullHeight + "px";
       targetAnswer.style.opacity = "1";
       targetAnswer.style.padding = window.innerWidth <= 760
-        ? "18px 24px 24px 24px"
-        : "20px 24px 32px 72px";
+        ? "18px 24px 32px 24px"
+        : "20px 24px 40px 72px";
     });
   };
 
