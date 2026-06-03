@@ -8,10 +8,229 @@ body,p,li,input,textarea,select{font-weight:400}.gnb a,nav a{font-weight:500}.fe
 .section{padding:94px 0}.services-section,.faq-section{background:#fff}.portfolio-section,.why-section{background:var(--bg)}.process-section{background:var(--bg-soft);text-align:center}.section-head{max-width:740px;margin-bottom:38px}.section-head h2,.section-header-flex h2,.center-title{margin:0 0 12px;font-size:clamp(32px,4vw,46px);line-height:1.18;letter-spacing:-.055em}.section-head p,.section-header-flex p,.section-desc{margin:0;color:var(--sub);word-break:keep-all}.sub-title{display:inline-block;margin-bottom:12px;font-size:15px;color:var(--pink);background:none;font-weight:700}
 .service-grid,.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.service-card,.why-card{min-height:210px;padding:30px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 30px rgba(245,109,154,.07);transition:all .3s ease}.service-card:hover,.why-card:hover,.portfolio-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(245,109,154,.12)}.service-card span{display:inline-block;margin-bottom:30px;font-size:22px;color:var(--pink);background:none}.service-card h3,.why-card h3{margin:0 0 9px;font-size:21px}.service-card p,.why-card p{margin:0;color:var(--sub);font-size:14px;word-break:keep-all}.why-card div{width:54px;height:54px;display:grid;place-items:center;margin-bottom:18px;border-radius:999px;background:rgba(245,109,154,.12);font-size:24px}
 .section-header-flex{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.btn-mini{flex:0 0 auto;font-size:14px}.portfolio-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}.filter-btn{min-height:40px;padding:0 22px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#6a626b;font-size:13px;cursor:pointer;transition:all .25s ease}.filter-btn.active,.filter-btn:hover{background:var(--pink);color:#fff;border-color:var(--pink)}.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.portfolio-card{overflow:hidden;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 14px 34px rgba(245,109,154,.08);transition:all .3s ease}.img-wrap{aspect-ratio:1/1;overflow:hidden;background:var(--bg-soft)}.img-wrap img{width:100%;height:100%;object-fit:cover;transition:.35s ease}.portfolio-card:hover .img-wrap img{transform:scale(1.04)}.portfolio-info{padding:20px}.portfolio-info span{font-size:12px;color:var(--pink);background:none}.portfolio-info h3{margin:8px 0;font-size:18px;line-height:1.35}.portfolio-info p{margin:0;color:#9a9299;font-size:13px}
-.process-timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:38px}.process-step{position:relative;padding:12px 8px}.step-icon{width:66px;height:66px;margin:0 auto 12px;display:grid;place-items:center;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px rgba(245,109,154,.1);font-size:26px}.process-step span{display:block;margin-bottom:7px;color:#9e969e;font-weight:600;font-size:13px}.process-step h3{margin:0 0 7px;font-size:17px}.process-step p{margin:0;color:var(--sub);font-size:13px}
+.process-timeline{display:flex;justify-content:center;align-items:flex-start;gap:72px;margin-top:38px;flex-wrap:wrap}.process-step{position:relative;padding:12px 8px;width:120px;text-align:center}.step-icon{width:66px;height:66px;margin:0 auto 12px;display:grid;place-items:center;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px rgba(245,109,154,.1);font-size:26px}.process-step span{display:block;margin-bottom:7px;color:#9e969e;font-weight:600;font-size:13px}.process-step h3{margin:0 0 7px;font-size:17px}.process-step p{margin:0;color:var(--sub);font-size:13px}
 .faq-section{padding-top:94px;padding-bottom:54px}.text-center{text-align:center}.faq-pill{display:inline-block;padding:6px 18px;border-radius:999px;background:rgba(245,109,154,.1);color:var(--pink);font-size:14px;font-weight:600}.faq-accordion{max-width:840px;margin:34px auto 0}.faq-item{margin-bottom:14px;border-radius:16px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:0 10px 26px rgba(245,109,154,.07)}.faq-question{width:100%;display:grid;grid-template-columns:34px 1fr 24px;gap:14px;align-items:center;padding:20px 24px;border:0;background:#fff;text-align:left;cursor:pointer;transition:background .25s ease}.faq-question:hover{background:var(--bg)}.faq-question:focus,.faq-question:focus-visible{outline:none}.faq-question span{width:30px;height:30px;display:grid;place-items:center;border-radius:999px;background:rgba(245,109,154,.12);color:var(--pink);font-weight:600}.faq-question strong{font-size:16px}.faq-question i{color:var(--pink);font-style:normal;font-size:22px;transition:transform .35s ease}.faq-item.active .faq-question i{transform:rotate(180deg)}.faq-answer{height:0;overflow:hidden;opacity:0;padding:0 24px 0 72px;color:var(--sub);transition:height .42s cubic-bezier(.22,1,.36,1),opacity .25s ease,padding .35s ease}.faq-answer p{margin:0;line-height:1.8;font-size:15px;color:var(--sub)}
 .bottom-cta{padding:86px 0;background:var(--bg-soft)}.cta-banner{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center;padding:42px 48px;border-radius:24px;background:rgba(255,255,255,.76);border:1px solid rgba(255,255,255,.92);backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(245,109,154,.12)}.contact-label{display:block;margin-bottom:8px;font-size:12px;letter-spacing:.12em;font-weight:600;color:#4e4a56}.cta-left h2{margin:0 0 16px;font-size:clamp(30px,3.4vw,48px);letter-spacing:-.06em;line-height:1.2}.cta-left strong{color:var(--pink);background:none}.cta-left p{margin:0;color:var(--sub);word-break:keep-all}.cta-form{display:grid;gap:12px}.cta-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.cta-form input,.cta-form select,.cta-form textarea{width:100%;border:1px solid rgba(45,40,55,.12);border-radius:14px;background:rgba(255,255,255,.92);padding:15px 16px;outline:none;font-weight:400}.cta-form input:focus,.cta-form select:focus,.cta-form textarea:focus{border-color:var(--pink);box-shadow:0 0 0 4px rgba(245,109,154,.12)}.form-message{min-height:20px;margin:0;font-weight:600;color:var(--pink)}
 .footer{padding:58px 0 28px;background:#302d35;color:rgba(255,255,255,.76)}.footer-inner{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:44px}.footer-logo{height:46px;margin-bottom:16px;filter:brightness(0) invert(1)}.footer h3{margin:0 0 12px;color:#fff;font-size:16px;font-weight:600}.footer p{margin:0;color:rgba(255,255,255,.72);font-size:14px}.footer-bottom{margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12)}
 .float-top{position:fixed;right:24px;bottom:24px;z-index:50;width:48px;height:48px;border:0;border-radius:999px;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:all .25s ease}.float-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}.reveal{opacity:0;transform:translateY(26px);transition:.75s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-@media(max-width:1080px){.gnb{gap:16px}.hero{min-height:auto}.hero-bg{opacity:.58;background-position:64% top}.hero-content{width:620px}.hero-cards,.service-grid,.why-grid,.portfolio-grid{grid-template-columns:repeat(2,1fr)}.hero-cards{gap:18px;padding:18px}.feature-card{grid-template-columns:74px 1fr;border-right:0;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.82)}.process-timeline{grid-template-columns:repeat(3,1fr)}.cta-banner{grid-template-columns:1fr}}
-@media(max-width:760px){.container{width:min(100% - 32px,1180px)}.header-inner{height:70px}.logo img{height:42px}.gnb{position:fixed;top:78px;left:16px;right:16px;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px;border-radius:20px;background:rgba(255,255,255,.98);box-shadow:var(--shadow)}.gnb.open{display:flex}.gnb a{padding:13px 16px;border-radius:14px}.gnb a:hover{background:var(--bg)}.header-cta{display:none}.mobile-menu-btn{display:block}.hero{min-height:auto;padding-bottom:44px}.hero-bg{inset:70px 0 auto 0;height:650px;background-position:68% top}.hero-bg:before{background:rgba(255,247,250,.74)}.hero-layout{height:650px;padding-top:70px}.hero-title{font-size:43px}.hero-desc{font-size:16px}.hero-cards{margin-top:-20px;grid-template-columns:1fr}.hero-cards,.service-grid,.why-grid,.portfolio-grid,.process-timeline,.footer-inner{grid-template-columns:1fr}.feature-card{grid-template-columns:70px 1fr}.section{padding:70px 0}.faq-section{padding-bottom:36px}.section-header-flex{align-items:flex-start;flex-direction:column}.faq-answer{padding-left:24px}.cta-banner{padding:28px}.cta-row{grid-template-columns:1fr}}
+@media(max-width:1080px){.gnb{gap:16px}.hero{min-height:auto}.hero-bg{opacity:.58;background-position:64% top}.hero-content{width:620px}.hero-cards,.service-grid,.why-grid,.portfolio-grid{grid-template-columns:repeat(2,1fr)}.hero-cards{gap:18px;padding:18px}.feature-card{grid-template-columns:74px 1fr;border-right:0;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.82)}.cta-banner{grid-template-columns:1fr}}
+@media(max-width:760px){.process-timeline{gap:28px}.process-step{width:42%}.container{width:min(100% - 32px,1180px)}.header-inner{height:70px}.logo img{height:42px}.gnb{position:fixed;top:78px;left:16px;right:16px;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px;border-radius:20px;background:rgba(255,255,255,.98);box-shadow:var(--shadow)}.gnb.open{display:flex}.gnb a{padding:13px 16px;border-radius:14px}.gnb a:hover{background:var(--bg)}.header-cta{display:none}.mobile-menu-btn{display:block}.hero{min-height:auto;padding-bottom:44px}.hero-bg{inset:70px 0 auto 0;height:650px;background-position:68% top}.hero-bg:before{background:rgba(255,247,250,.74)}.hero-layout{height:650px;padding-top:70px}.hero-title{font-size:43px}.hero-desc{font-size:16px}.hero-cards{margin-top:-20px;grid-template-columns:1fr}.hero-cards,.service-grid,.why-grid,.portfolio-grid,.footer-inner{grid-template-columns:1fr}.feature-card{grid-template-columns:70px 1fr}.section{padding:70px 0}.faq-section{padding-bottom:36px}.section-header-flex{align-items:flex-start;flex-direction:column}.faq-answer{padding-left:24px}.cta-banner{padding:28px}.cta-row{grid-template-columns:1fr}}
+
+
+
+/* === FINAL BUTTON HOVER FIX: must stay outside media query === */
+.header-cta,
+.btn-primary,
+.btn-outline,
+.btn-mini,
+.btn-kakao{
+  transition:all .35s cubic-bezier(.22,1,.36,1)!important;
+}
+
+.header-cta,
+.btn-primary{
+  background:#f56d9a!important;
+  color:#fff!important;
+  border:none!important;
+}
+
+.header-cta:hover,
+.btn-primary:hover{
+  background:#ef5d8d!important;
+  color:#fff!important;
+  transform:translateY(-6px) scale(1.05)!important;
+  box-shadow:0 20px 40px rgba(245,109,154,.30),0 5px 15px rgba(245,109,154,.15)!important;
+}
+
+a.btn-outline,
+.btn-outline,
+a.btn-mini,
+.btn-mini{
+  background:#fff!important;
+  color:#f56d9a!important;
+  border:1.5px solid #f56d9a!important;
+}
+
+a.btn-outline:hover,
+.btn-outline:hover,
+a.btn-mini:hover,
+.btn-mini:hover{
+  background:#f56d9a!important;
+  color:#fff!important;
+  border-color:#f56d9a!important;
+  transform:translateY(-6px) scale(1.05)!important;
+  box-shadow:0 20px 40px rgba(245,109,154,.25),0 5px 15px rgba(245,109,154,.15)!important;
+}
+
+button.btn-kakao,
+.btn-kakao{
+  background:#fee500!important;
+  color:#3c1e1e!important;
+  border:none!important;
+}
+
+button.btn-kakao:hover,
+.btn-kakao:hover{
+  background:#ffd600!important;
+  color:#3c1e1e!important;
+  transform:translateY(-6px) scale(1.05)!important;
+  box-shadow:0 20px 40px rgba(254,229,0,.35)!important;
+}
+
+
+/* =========================================================
+   FINAL TUNING 2026-06
+   - hero badge stroke removed
+   - FAQ answer padding/height fix
+   - service SVG pictograms
+   - softer button hover shadow
+   - contact title weight softened
+========================================================= */
+
+/* 1) 히어로 상단 문구 앞 스트로크 제거 */
+.hero-badge::before {
+  display: none !important;
+  content: none !important;
+}
+
+.hero-badge {
+  padding-left: 0 !important;
+  color: #d66f9e !important;
+}
+
+/* 2) FAQ: 답변 하단/상단 패딩 안정화 + 글씨 잘림 방지 */
+.faq-item {
+  overflow: hidden !important;
+}
+
+.faq-answer {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 24px 0 72px !important;
+  color: var(--sub);
+  transition:
+    height 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.25s ease,
+    padding 0.35s ease;
+}
+
+.faq-item.active .faq-answer {
+  opacity: 1;
+}
+
+.faq-answer p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.85 !important;
+  font-size: 15px !important;
+  color: #6f6a78 !important;
+}
+
+/* 3) 서비스 카드 SVG 픽토그램 */
+.service-card {
+  position: relative;
+}
+
+.service-card .service-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin: 0 0 22px;
+  border-radius: 999px;
+  background: rgba(245, 109, 154, 0.1);
+}
+
+.service-card .service-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.service-card .service-icon svg * {
+  fill: none;
+  stroke: #f56d9a;
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* 숫자와 아이콘 같이 보여도 지저분하지 않게 정리 */
+.service-card > span {
+  margin-bottom: 18px !important;
+  color: #f56d9a !important;
+  background: none !important;
+}
+
+/* 4) 버튼 hover: 섀도우 덜 진하고 세련되게 */
+.header-cta,
+.btn-primary,
+.btn-outline,
+.btn-mini,
+.btn-kakao {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease !important;
+}
+
+.header-cta:hover,
+.btn-primary:hover {
+  background: #ef5d8d !important;
+  color: #fff !important;
+  transform: translateY(-4px) scale(1.025) !important;
+  box-shadow:
+    0 14px 26px rgba(245, 109, 154, 0.18),
+    0 4px 10px rgba(245, 109, 154, 0.10) !important;
+}
+
+a.btn-outline:hover,
+.btn-outline:hover,
+a.btn-mini:hover,
+.btn-mini:hover {
+  background: #f56d9a !important;
+  color: #fff !important;
+  border-color: #f56d9a !important;
+  transform: translateY(-4px) scale(1.025) !important;
+  box-shadow:
+    0 14px 26px rgba(245, 109, 154, 0.16),
+    0 4px 10px rgba(245, 109, 154, 0.08) !important;
+}
+
+button.btn-kakao:hover,
+.btn-kakao:hover {
+  background: #ffd600 !important;
+  color: #3c1e1e !important;
+  transform: translateY(-4px) scale(1.025) !important;
+  box-shadow:
+    0 14px 26px rgba(254, 229, 0, 0.22),
+    0 4px 10px rgba(60, 30, 30, 0.06) !important;
+}
+
+/* 5) CONTACT 타이틀 볼드 완화 */
+.cta-left h2 {
+  font-weight: 600 !important;
+  letter-spacing: -0.055em !important;
+}
+
+.cta-left h2 strong {
+  font-weight: 700 !important;
+}
+
+/* 모바일에서 FAQ 좌측 패딩 과도하지 않게 */
+@media (max-width: 760px) {
+  .faq-answer {
+    padding-left: 24px !important;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 18px 24px 24px 24px !important;
+  }
+
+  .service-card .service-icon {
+    width: 54px;
+    height: 54px;
+  }
+}
