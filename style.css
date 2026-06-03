@@ -234,3 +234,9 @@ button.btn-kakao:hover,
     height: 54px;
   }
 }
+.hero-content.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
