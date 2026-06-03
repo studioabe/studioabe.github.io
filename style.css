@@ -881,4 +881,21 @@ body, p, li, input, textarea, select { font-weight: 400; }
   background: #ef5d8d !important;
   color: #fff !important;
 }
+
+  a.btn-outline,
+.btn-outline {
+  background: #fff !important;
+  color: #f56d9a !important;
+  border: 1.5px solid #f56d9a !important;
+}
+
+a.btn-outline:hover,
+.btn-outline:hover,
+.hero-buttons a.btn-outline:hover {
+  background: #f56d9a !important;
+  color: #fff !important;
+  border-color: #f56d9a !important;
+  box-shadow: 0 14px 28px rgba(245, 109, 154, 0.28) !important;
+  transform: translateY(-3px) !important;
+}
 }
