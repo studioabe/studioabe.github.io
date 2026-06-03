@@ -122,8 +122,4 @@ if (contactForm) contactForm.addEventListener("submit", async (event) => {
   formMessage.textContent = "상담 신청이 접수되었습니다. 빠르게 확인 후 연락드릴게요.";
   contactForm.reset();
 });
-// if (contactForm) contactForm.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   formMessage.textContent = "문의 샘플이 접수된 것처럼 표시했어요. 실제 전송은 별도 연결이 필요합니다.";
-//   contactForm.reset();
-});
+
