@@ -1223,14 +1223,14 @@ button.btn-kakao:hover {
     transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-  .btn-primary:hover,
+.btn-primary:hover,
 .btn-outline:hover,
 .btn-kakao:hover {
-    transform: translateY(-5px) scale(1.03);
-
+transform: translateY(-6px) scale(1.05);
     box-shadow:
         0 15px 35px rgba(245,109,154,.25),
         0 5px 15px rgba(245,109,154,.15);
+  
 }
   
 }
