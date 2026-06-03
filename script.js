@@ -114,7 +114,7 @@ if (contactForm) contactForm.addEventListener("submit", async (event) => {
     message: contactForm.querySelector("textarea").value
   };
 
-  await fetch("여기에_Apps_Script_URL_붙여넣기", {
+  await fetch("https://script.google.com/macros/s/AKfycbxAZ1U3sR_fgiU_VJ0eKTPviJqiyMjSXX_AH4wRmDkwFxLb0jwWQh-5fFBrP3bORA6xTA/exec", {
     method: "POST",
     body: JSON.stringify(formData)
   });
