@@ -761,86 +761,8 @@ body, p, li, input, textarea, select { font-weight: 400; }
 
   .process-timeline { grid-template-columns: repeat(3, 1fr); }
   .cta-banner { grid-template-columns: 1fr; }
-}
 
-@media (max-width: 760px) {
-  .container { width: min(100% - 32px, 1180px); }
-  .header-inner { height: 70px; }
-  .logo img { height: 42px; }
-
-  .gnb {
-    position: fixed;
-    top: 78px;
-    left: 16px;
-    right: 16px;
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 12px;
-    border-radius: 20px;
-    background: rgba(255,255,255,.98);
-    box-shadow: var(--shadow);
-  }
-
-  .gnb.open { display: flex; }
-
-  .gnb a {
-    padding: 13px 16px;
-    border-radius: 14px;
-  }
-
-  .gnb a:hover { background: var(--bg); }
-  .header-cta { display: none; }
-  .mobile-menu-btn { display: block; }
-
-  .hero {
-    min-height: auto;
-    padding-bottom: 44px;
-  }
-
-  .hero-bg {
-    inset: 70px 0 auto 0;
-    height: 650px;
-    background-position: 68% top;
-  }
-
-  .hero-bg::before { background: rgba(255,247,250,.74); }
-
-  .hero-layout {
-    height: 650px;
-    padding-top: 70px;
-  }
-
-  .hero-title { font-size: 43px; }
-  .hero-desc { font-size: 16px; }
-
-  .hero-cards {
-    margin-top: -20px;
-    grid-template-columns: 1fr;
-  }
-
-  .hero-cards, .service-grid, .why-grid, .portfolio-grid, .process-timeline, .footer-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-card {
-    grid-template-columns: 70px 1fr;
-  }
-
-  .section { padding: 70px 0; }
-
-  .section-header-flex {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .faq-answer { padding-left: 24px; }
-  .cta-banner { padding: 28px; }
-  .cta-row { grid-template-columns: 1fr; }
-
-/* 버튼 컬러 최종 덮어쓰기 */
-.header-cta,
+  .header-cta,
 .btn-primary,
 .float-top {
   background: linear-gradient(90deg, #e989b8 0%, #a996f4 100%) !important;
@@ -869,7 +791,7 @@ body, p, li, input, textarea, select { font-weight: 400; }
   box-shadow: 0 14px 28px rgba(245, 109, 154, 0.25);
   transform: translateY(-3px);
 }
-  .header-cta,
+.header-cta,
 .btn-primary {
   background: #f56d9a !important;
   color: #fff !important;
@@ -882,7 +804,7 @@ body, p, li, input, textarea, select { font-weight: 400; }
   color: #fff !important;
 }
 
-  a.btn-outline,
+ a.btn-outline,
 .btn-outline {
   background: #fff !important;
   color: #f56d9a !important;
@@ -961,24 +883,87 @@ a.,
     box-shadow:0 15px 30px rgba(245,109,154,.25);
 }
 
-/* =========================
-   카드 Hover
-========================= */
 
-.feature-card,
-.service-card,
-.portfolio-card,
-.why-card{
-    transition:all .3s ease;
+  
 }
 
-.feature-card:hover,
-.service-card:hover,
-.portfolio-card:hover,
-.why-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(245,109,154,.12);
-}
+@media (max-width: 760px) {
+  .container { width: min(100% - 32px, 1180px); }
+  .header-inner { height: 70px; }
+  .logo img { height: 42px; }
+
+  .gnb {
+    position: fixed;
+    top: 78px;
+    left: 16px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.98);
+    box-shadow: var(--shadow);
+  }
+
+  .gnb.open { display: flex; }
+
+  .gnb a {
+    padding: 13px 16px;
+    border-radius: 14px;
+  }
+
+  .gnb a:hover { background: var(--bg); }
+  .header-cta { display: none; }
+  .mobile-menu-btn { display: block; }
+
+  .hero {
+    min-height: auto;
+    padding-bottom: 44px;
+  }
+
+  .hero-bg {
+    inset: 70px 0 auto 0;
+    height: 650px;
+    background-position: 68% top;
+  }
+
+  .hero-bg::before { background: rgba(255,247,250,.74); }
+
+  .hero-layout {
+    height: 650px;
+    padding-top: 70px;
+  }
+
+  .hero-title { font-size: 43px; }
+  .hero-desc { font-size: 16px; }
+
+  .hero-cards {
+    margin-top: -20px;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cards, .service-grid, .why-grid, .portfolio-grid, .process-timeline, .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .section { padding: 70px 0; }
+
+  .section-header-flex {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .faq-answer { padding-left: 24px; }
+  .cta-banner { padding: 28px; }
+  .cta-row { grid-template-columns: 1fr; }
+
+
 
 /* =========================
    FAQ
