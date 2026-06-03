@@ -61,7 +61,7 @@ faqItems.forEach((item) => {
     target.classList.add("active");
 
     targetAnswer.style.height = "auto";
-    const fullHeight = targetAnswer.scrollHeight + 24;
+    const fullHeight = targetAnswer.scrollHeight;
     targetAnswer.style.height = "0px";
 
     requestAnimationFrame(() => {
@@ -69,7 +69,7 @@ faqItems.forEach((item) => {
       targetAnswer.style.opacity = "1";
       targetAnswer.style.padding = window.innerWidth <= 760
         ? "18px 24px 32px 24px"
-        : "20px 24px 40px 72px";
+        : "20px 24px 20px 72px";
     });
   };
 
