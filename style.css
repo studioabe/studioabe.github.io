@@ -113,8 +113,6 @@ button.btn-kakao:hover,
     height 0.42s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.25s ease,
     padding 0.35s ease;
-      line-height:1.8;
-    padding-bottom:16px;
 }
 
 .faq-item.active .faq-answer {
@@ -123,8 +121,7 @@ button.btn-kakao:hover,
 
 .faq-answer p {
   margin: 0 !important;
-  /* padding: 0 !important; */
-  padding-bottom: 4px;
+  padding: 0 !important;
   line-height: 1.85 !important;
   font-size: 15px !important;
   color: #6f6a78 !important;
@@ -236,18 +233,4 @@ button.btn-kakao:hover,
     width: 54px;
     height: 54px;
   }
-}
-.hero-content {
-  position: relative !important;
-  z-index: 10 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.hero-title,
-.hero-badge,
-.hero-desc,
-.hero-buttons {
-  opacity: 1 !important;
-  visibility: visible !important;
 }
