@@ -94,9 +94,10 @@ button.btn-kakao:hover,
 }
 .hero-badge{
     color:#ef4f96;
-    font-weight:700;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:-0.02em;
 }
-
 /* 2) FAQ: 답변 하단/상단 패딩 안정화 + 글씨 잘림 방지 */
 .faq-item {
   overflow: hidden !important;
