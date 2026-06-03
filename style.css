@@ -123,7 +123,8 @@ button.btn-kakao:hover,
 
 .faq-answer p {
   margin: 0 !important;
-  padding: 0 !important;
+  /* padding: 0 !important; */
+  padding-bottom: 4px;
   line-height: 1.85 !important;
   font-size: 15px !important;
   color: #6f6a78 !important;
