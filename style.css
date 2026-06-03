@@ -861,6 +861,24 @@ body, p, li, input, textarea, select { font-weight: 400; }
   color: #fff !important;
   border-color: transparent !important;
 }
+.btn-outline:hover,
+.btn-mini:hover {
+  background: #f56d9a !important;
+  color: #fff !important;
+  border-color: #f56d9a !important;
+  box-shadow: 0 14px 28px rgba(245, 109, 154, 0.25);
+  transform: translateY(-3px);
+}
+  .header-cta,
+.btn-primary {
+  background: #f56d9a !important;
+  color: #fff !important;
+  border: none !important;
+}
 
-  
+.header-cta:hover,
+.btn-primary:hover {
+  background: #ef5d8d !important;
+  color: #fff !important;
+}
 }
